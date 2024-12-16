@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Árboles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Font style */
+            background-color: #f2f2f2; /* Light gray background color */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+            /*color: #683030;*/
+        }
+        /*header styling*/
+        header {
+            background-color: #4caf50; /* Green background for the header */
+            padding: 10px; /* Adds padding inside the header */
+            text-align: center; /* Centers the text */
+            font-size: 3vw; /* Font size for larger screens */
+            color: white; /* White text color */
+        }
+    
+
+        #tree-list {
+            display: flex;
+            flex-direction: column; /* Make buttons stack vertically */
+            align-items: center; /* Center the buttons horizontally */
+            width: 100%; /* Make sure the tree list container is full width */
+        }
+
+        .tree-button {
+            background-color: #9E9B7B;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: left;
+            width: 90%; /* You can adjust the width as needed */
+            max-width: 70%; /* Limit the maximum width of buttons */
+            font-size: 40px;
+        }
+
+        .menu {
+            width: 80%; /* 80% of the page width */
+            height: 120px; /* Adjusted height for a better balance */
+            /*background-color: darkgray;  Black background */
+            margin-left: auto; /* Centers the menu horizontally */
+            margin-right: auto; /* Centers the menu horizontally */
+            opacity: 0.5; /* 50% transparency */
+            display: flex; /* Enables flex layout */
+            justify-content: space-evenly; /* Space out the buttons */
+            align-items: center; /* Centers vertically */
+            background-color: rgba(60, 60, 60, 0.8); /* Menú ligeramente translúcido */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        /* Styling for individual menu buttons */
+        .boton_menu {
+            cursor: pointer;
+            width: 150px; /* Adjust button width */
+            height: 80px; /* Adjust button height */
+            padding: 1px;
+            border: 5px solid #ccc; /* Gray border with 5px width */
+            background-color: black;
+            display: flex; /* Enables flex layout */
+            justify-content: center; /* Centers text horizontally */
+            align-items: center; /* Centers text vertically */
+        }
+
+        .texto_menu {
+            font-size: 1.5vw; /* Adjust font size inside buttons */
+            color: white;
+        }
+        #tree-list {
+            font-size: 18px; /* Adjust font size */
+            line-height: 1.5; /* Improve readability */
+            padding: 10px; /* Add spacing */
+            border: 1px solid #ddd; /* Optional: Add a border */
+            background-color: #f9f9f9; /* Optional: Background color */
+        }
+
+        .tree-button {
+            font-size: 25px; /* Default font size */
+            padding: 10px;
+            background-color: #BE9B7B;/* Green background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px 0; /* Space between buttons */
+            width: 100%; /* Make buttons fill available width */
+            text-align: left; /* Align text to the left */
+            cursor: pointer;
+        }
+        .tree-button:hover {
+            background-color: #937960; /* Slightly darker green when hovering */
+        }
+
+        @media only screen and (max-width:  620px) {
+            header {
+                font-size: 4vw; /* Larger font size on mobile */
+            }
+
+            h1 {
+                font-size: 6vw; /* Increase text size for smaller screens */
+            }
+            .menu {
+                width: 90%; /* Adjust width for mobile */
+            }
+
+            .boton_menu {
+                width: 110%; /* Smaller button size for mobile */
+                height: 60px;
+            }
+
+            .texto_menu {
+                font-size: 4vw; /* Increase font size for mobile */
+            }
+            .a {
+                width: 50%; /* Make buttons take up more space on mobile */
+                margin: 5px; /* Adjust margins */
+                font-size: 3vw; /* Increase font size for mobile */
+            }
+            #tree-list{
+                font-size:14px;
+            }
+            .tree-item {
+                font-size: 14px; /* Smaller text for list items */
+                padding: 3px 0; /* Adjust padding */
+            }
+
+            .tree-button:hover {
+                padding: 8px 15px;
+            }
+        }
+        @media only screen and (min-width: 1024px) {
+            header {
+                font-size: 4vw; /* Larger font size on mobile */
+            }
+
+            h1 {
+                font-size: 6vw; /* Increase text size for smaller screens */
+            }
+            .boton_menu {
+                width: 200px; /* Bigger buttons for desktop */
+                height: 100px;
+            }
+
+            .texto_menu {
+                font-size: 1.2vw; /* Smaller text inside buttons for desktop */
+            }
+            
+        }
+    </style> 
+</head>
+<body>
+    <main>
+        <header>
+            <div class="menu"> <!-- Empty div to style as a menu container -->
+                <a href = "Inicio.html">
+                    <button class="boton_menu">
+                        <h4 class="texto_menu">Inicio</h4>
+                    </button>
+                </a>
+                <a href = "Lista_Arboles.html">
+                    <button class="boton_menu">
+                        <h4 class="texto_menu">Lista de plantas</h4>
+                    </button>
+                </a>
+             
+             <button class="boton_menu">
+              <h4 class="texto_menu">Favoritos</h4>
+             </button>
+             <button class="boton_menu">
+              <h4 class="texto_menu">Salva el mundo!</h4>
+             </button>
+            </div>
+        </header>  
+    </main>
+    <div id="tree-list" ><!-- Here we'll display the list of trees -->
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
