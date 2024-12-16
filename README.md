@@ -1,2 +1,2 @@
 # Ecoversion
-Personal project to make a PWA that will give the people access to information about native plants around Mexico
+Ecoversion is a personal project that I've been planning for a few months and that I started developing this month, Basically, Ecoversion is a website in which people from each location in Mexico will have access to a database of native plants from their specific cities and regions where they live. The 1st part is to first add a database of trees only, and afterwards, adding more types f plants in the future.
