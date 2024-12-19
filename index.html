@@ -88,14 +88,16 @@
 
     /* Style for the row to arrange columns side by side */
     .row {
-      display: flex; /* Arrange child elements (columns) in a row */
+        display: flex;
+        justify-content: center; /* Aligns columns in the row */
     }
 
-    /* Style for each column */
     .column {
-      flex: 1; /* Each column takes up equal space within the row */
-      padding: 5px; /* Add spacing around each column for better visuals */
-      justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers items horizontally */
+        text-align: center;  /* Ensures text inside buttons is centered */
+        margin: 10px; /* Optional: adds spacing between columns */
     }
 
     /* Style for images inside columns */
