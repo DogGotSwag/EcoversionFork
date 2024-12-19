@@ -87,24 +87,22 @@
 
 
     /* Style for the row to arrange columns side by side */
+
     .row {
-        display: flex;
-        justify-content: center; /* Aligns columns in the row */
+      display: flex; /* Arrange child elements (columns) in a row */
     }
 
+    /* Style for each column */
     .column {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centers items horizontally */
-        text-align: center;  /* Ensures text inside buttons is centered */
-        margin: 10px; /* Optional: adds spacing between columns */
+      flex: 1; /* Each column takes up equal space within the row */
+      padding: 5px; /* Add spacing around each column for better visuals */
     }
 
     /* Style for images inside columns */
     .column img {
-        width: 100%; /* Makes the image fill its container */
-        max-width: 300px; /* Sets a consistent maximum width */
-        height: auto; /* Maintains aspect ratio */
+      width: 100%; /* Make the image fill the full width of its column */
+      height: 200px; /* Set a fixed height for all images to make them uniform */
+      object-fit: cover; /* Ensure the image fills the area without distortion */
     }
     /* Adjust button images to be responsive */
     
