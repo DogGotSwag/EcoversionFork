@@ -72,15 +72,6 @@
       align-items: center; /* Centers text vertically */
     }
 
-    .boton_2{
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        padding: 1px;
-        border: 5px solid #ccc;
-        backgroinf-color: green;
-    }
     .texto_menu {
       font-size: 1.5vw; /* Adjust font size inside buttons */
       color: white;
@@ -93,19 +84,36 @@
       display: flex; /* Arrange child elements (columns) in a row */
     }
 
-    /* Style for each column */
     .column {
       flex: 1; /* Each column takes up equal space within the row */
       padding: 5px; /* Add spacing around each column for better visuals */
+      display: flex; /* Enables flexbox layout */
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Centers image and text horizontally */
     }
 
-    /* Style for images inside columns */
     .column img {
-      width: 100%; /* Make the image fill the full width of its column */
-      height: 200px; /* Set a fixed height for all images to make them uniform */
-      object-fit: cover; /* Ensure the image fills the area without distortion */
+      width: 200px; /* Maintain the fixed width for the images */
+      height: 100%; /* Maintain aspect ratio */
+      object-fit: cover; /* Prevent distortion */
     }
-    /* Adjust button images to be responsive */
+
+    .boton_2 {
+      margin-top: 10px; /* Adds spacing between the image and text button */
+      display: flex; /* Enables flexbox for alignment */
+      justify-content: center; /* Centers text inside the button */
+      align-items: center; /* Centers vertically */
+      background-color: transparent; /* Keeps button background clear */
+      border: none; /* Removes button border */
+      cursor: pointer; /* Adds a pointer cursor for better UX */
+    }
+
+    .boton_2 p {
+      text-align: center; /* Ensures the text is centered */
+      font-size: 1rem; /* Adjust text size */
+      color: #683030; /* Matches the specified text color */
+      margin: 0; /* Removes default paragraph margin */
+    }
     
     footer {
       background-color: #4caf50; /* Green background */
