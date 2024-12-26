@@ -83,8 +83,11 @@ function displayTrees(treeList) {
 
   // Recorre la lista de árboles y crea un botón para cada uno.
   trees.forEach((tree) => {
-    const button = document.createElement('button'); // Crea un botón HTML.
-    button.textContent = '${tree.name} (Nombre científico: ${tree.scientificName})'; // Texto del botón.
+    const button = document.createElement('button');
+    
+    // Set the button text to be the name and scientific name of the tree
+    button.textContent = `${tree.name} (Nombre científico: ${tree.scientificName})`;
+    
     button.classList.add('tree-button'); // Añade una clase CSS para estilizar el botón.
 
     // Agrega un evento que redirige a la página de detalles al hacer clic.
