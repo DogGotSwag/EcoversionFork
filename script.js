@@ -104,7 +104,7 @@ function displayTrees(treeList) {
     // Agrega un evento que redirige a la página de detalles al hacer clic.
     button.addEventListener('click', () => {
       // Redirige a `detalle_arbol.html` con el nombre del árbol como parámetro en la URL.
-      window.location.href = `arbol_detalle.html?tree=${encodeURIComponent(tree.name)}`;
+      window.location.href = 'arbol_detalle.html?tree=${encodeURIComponent(tree.name)}';
     });
 
     // Añade el botón al contenedor de la lista.
@@ -123,14 +123,14 @@ function showTreeDetails(treeDetail) {
 
   if (tree) {
     // Si el árbol es encontrado, actualiza el contenido del contenedor con su información.
-    treeDetail.innerHTML = `
+    treeDetail.innerHTML = '
       <h2>${tree.name}</h2> <!-- Nombre común del árbol -->
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
       <p>${tree.info}</p> <!-- Descripción -->
       <p>${tree.flor}</p> <!-- floración -->
       <p><strong>Distribución:</strong><p>${tree.distribución}</p> <!-- distribución -->
       <p><strong>Usos:</strong><p>${tree.usos}</p> <!-- usos comunes -->
-    `;
+    ';
   } else {
     // Si no se encuentra el árbol, muestra un mensaje de error.
     treeDetail.innerHTML = '<h1>Árbol no encontrado</h1>';
