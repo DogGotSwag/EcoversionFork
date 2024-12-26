@@ -87,7 +87,7 @@ function displayTrees(treeList) {
     
     // Set the button text to be the name and scientific name of the tree
     // Generar botones con el nombre y nombre científico de cada árbol
-    button.textContent = `${tree.name} (Nombre científico: ${tree.scientificName})`;
+    button.textContent = tree.name + " (Nombre científico: " + tree.scientificName + ")";
 
     
     button.classList.add('tree-button'); // Añade una clase CSS para estilizar el botón.
