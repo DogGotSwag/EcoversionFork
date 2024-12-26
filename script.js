@@ -104,7 +104,7 @@ function displayTrees(treeList) {
     // Agrega un evento que redirige a la página de detalles al hacer clic.
     button.addEventListener('click', () => {
       // Redirige a `detalle_arbol.html` con el nombre del árbol como parámetro en la URL.
-      window.location.href = 'detalle_arbol.html?tree=${encodeURIComponent(tree.name)}';
+      window.location.href = 'arbol_detalle.html?tree=${encodeURIComponent(tree.name)}';
     });
 
     // Añade el botón al contenedor de la lista.
