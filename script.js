@@ -57,22 +57,8 @@ const trees = [
 
 // Lógica compartida para la lista y los detalles de los árboles
 // Esta función se ejecuta cuando el DOM está completamente cargado.
-document.addEventListener("DOMContentLoaded", () => {
-  const treeList = document.getElementById('tree-list'); // Contenedor de la lista de árboles.
-  const treeDetail = document.getElementById('tree-detail'); // Contenedor de los detalles del árbol.
-
-  // Si la página contiene el contenedor de lista, genera los botones de los árboles.
-  if (treeList) {
-    displayTrees(treeList); // Llama a la función para mostrar la lista de árboles.
-  }
-
-  // Si la página contiene el contenedor de detalles, muestra la información del árbol.
-  if (treeDetail) {
-    showTreeDetails(treeDetail); // Llama a la función para mostrar los detalles del árbol seleccionado.
-  }
-});
-
-// Function to display the trees as buttons with name and scientific name
+// Lógica compartida para la lista y los detalles de los árboles
+// Esta función se ejecuta cuando el DOM está completamente cargado.
 document.addEventListener("DOMContentLoaded", () => {
   const treeList = document.getElementById('tree-list'); // Contenedor de la lista de árboles.
   const treeDetail = document.getElementById('tree-detail'); // Contenedor de los detalles del árbol.
@@ -98,13 +84,13 @@ function displayTrees(treeList) {
   // Recorre la lista de árboles y crea un botón para cada uno.
   trees.forEach((tree) => {
     const button = document.createElement('button'); // Crea un botón HTML.
-    button.textContent ='${tree.name} (Nombre científico: ${tree.scientificName})'; // Texto del botón.
+    button.textContent = `${tree.name} (Nombre científico: ${tree.scientificName})`; // Texto del botón.
     button.classList.add('tree-button'); // Añade una clase CSS para estilizar el botón.
 
     // Agrega un evento que redirige a la página de detalles al hacer clic.
     button.addEventListener('click', () => {
       // Redirige a `detalle_arbol.html` con el nombre del árbol como parámetro en la URL.
-      window.location.href = 'arbol_detalle.html?tree=${encodeURIComponent(tree.name)}';
+      window.location.href = `detalle_arbol.html?tree=${encodeURIComponent(tree.name)}`;
     });
 
     // Añade el botón al contenedor de la lista.
@@ -123,14 +109,12 @@ function showTreeDetails(treeDetail) {
 
   if (tree) {
     // Si el árbol es encontrado, actualiza el contenido del contenedor con su información.
-    treeDetail.innerHTML = '
+    treeDetail.innerHTML = `
       <h2>${tree.name}</h2> <!-- Nombre común del árbol -->
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
-      <p>${tree.info}</p> <!-- Descripción -->
-      <p>${tree.flor}</p> <!-- floración -->
-      <p><strong>Distribución:</strong><p>${tree.distribución}</p> <!-- distribución -->
-      <p><strong>Usos:</strong><p>${tree.usos}</p> <!-- usos comunes -->
-    ';
+      <p>${tree.description}</p> <!-- Descripción -->
+      <img src="${tree.image}" alt="${tree.name}" style="max-width:100%; height:auto;"> <!-- Imagen -->
+    `;
   } else {
     // Si no se encuentra el árbol, muestra un mensaje de error.
     treeDetail.innerHTML = '<h1>Árbol no encontrado</h1>';
