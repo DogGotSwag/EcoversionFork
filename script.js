@@ -117,7 +117,7 @@ function showTreeDetails(treeDetail) {
     treeDetail.innerHTML = `
       <h2>${tree.name}</h2> <!-- Nombre común del árbol -->
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
-      <p>${tree.description}</p> <!-- Descripción -->
+      <p>${tree.info}</p> <!-- Descripción -->
       <img src="${tree.image}" alt="${tree.name}" style="max-width:100%; height:auto;"> <!-- Imagen -->
     `;
   } else {
