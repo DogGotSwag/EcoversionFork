@@ -118,6 +118,7 @@ function showTreeDetails(treeDetail) {
       <h2>${tree.name}</h2> <!-- Nombre común del árbol -->
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
       <p>${tree.info}</p> <!-- Descripción -->
+      <p>${tree.flor}<?p> <!--Floracion-->
       <img src="${tree.image}" alt="${tree.name}" style="max-width:100%; height:auto;"> <!-- Imagen -->
     `;
   } else {
