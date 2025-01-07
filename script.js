@@ -26,7 +26,7 @@ const trees = [
     info: "Árbol nativo del norte de Mexico y suroeste de Estados Unidos. Llega a alcanzar alturas de entre 5 a 9 metros de altura. Resistente a las sequias y heladas. Produce un fruto en forma de vaina",   
     flor: "Primavera y espontaneamene en verano y otoño.",
     distribución: "Sonora, Chihuahua, Durango, Coahuila, Nuevo León, Tamaulipas, San Luis Potosí.",
-    usos: "Árbol de sombra, atractor de poliinizadores, se utiliza las vainas para hacer una harina libre de gluten, nitrogernar el suelo, madera usada para asar carne."
+    usos: "Árbol de sombra, atractor de poliinizadores, se utiliza las vainas para hacer una harina libre de gluten, nitrogernar el suelo, madera usada para asar carne.",
     image: "./imagenes/honeymesquite2.jpg"
   },
   { 
@@ -35,7 +35,8 @@ const trees = [
     info: "Árbol nativo del norte de Mexico y suroeste de Estados Unidos, unicamente cerca de cuerpos de agua, especialmente a las orillas de los rios Colorado y Bravo/Grande. Llega a alcanzar alturas de hasta 7 metros de altura. Resistente a las sequias y heladas. Su nombre se debe a que su fruto tiene forma de tornillo.",   
     flor: "Primavera y espontaneamene en verano.",
     distribución: "Sonora, Chihuahua, Baja California.",
-    usos: "'Arbol de sombra, atractor de polinizadores."
+    usos: "'Arbol de sombra, atractor de polinizadores.",
+    image: "./imagenes/mwz_tornillo.jpg"
   },
   { 
     name: "Mimbre del desierto", 
