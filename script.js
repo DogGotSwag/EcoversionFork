@@ -36,7 +36,7 @@ const trees = [
     flor: "Primavera y espontaneamene en verano.",
     distribución: "Sonora, Chihuahua, Baja California.",
     usos: "'Arbol de sombra, atractor de polinizadores.",
-    image: "./imagenes/mwz_tornillo.jpg"
+    image: "./imagenes/mez_tornillo.jpg"
   },
   { 
     name: "Mimbre del desierto", 
