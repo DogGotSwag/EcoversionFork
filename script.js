@@ -32,7 +32,6 @@ const trees = [
   { 
     name: "Mezquite Tornillo", 
     scientificName: "Neltuma pubescens",
-    
     info: "Árbol nativo del norte de Mexico y suroeste de Estados Unidos, unicamente cerca de cuerpos de agua, especialmente a las orillas de los rios Colorado y Bravo/Grande. Llega a alcanzar alturas de hasta 7 metros de altura. Resistente a las sequias y heladas. Su nombre se debe a que su fruto tiene forma de tornillo.",   
     flor: "Primavera y espontaneamene en verano.",
     distribución: "Sonora, Chihuahua, Baja California.",
