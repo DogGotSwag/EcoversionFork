@@ -2,23 +2,48 @@
 const trees = [
   { 
     name: "Encino blanco", 
-    scientificName: "Quercus arizonica"
+    scientificName: "Quercus arizonica",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   { 
     name: "Pino de Durango", 
-    scientificName: "Pinus durangensis"
+    scientificName: "Pinus durangensis",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   { 
     name: "Encino gris", 
-    scientificName: "Quercus grisea"
+    scientificName: "Quercus grisea",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   { 
     name: "Sabino", 
-    scientificName: "Juniperus deppeana"
+    scientificName: "Juniperus deppeana",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   { 
     name: "Pino piñonero", 
-    scientificName: "Pinus cembroides"
+    scientificName: "Pinus cembroides",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   { 
     name: "Mezquite Dulce", 
@@ -40,27 +65,57 @@ const trees = [
   },
   { 
     name: "Mimbre del desierto", 
-    scientificName: "Chilopsis linearis"
+    scientificName: "Chilopsis linearis",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   {
     name: "Acacia Uña de Gato",
-    scientificName: "Acacia greggii"
+    scientificName: "Acacia greggii",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   {
     name: "Huizache",
-    scientificName: "Acacia farnesiana"
+    scientificName: "Acacia farnesiana",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   {
     name: "Vara prieta",
-    scientificName: "Acacia constricta"
+    scientificName: "Acacia constricta",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   {
     name: "Palo blanco",
-    scientificName: "Celtis reticulata"
+    scientificName: "Celtis reticulata",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   },
   {
     name: "Jaboncillo",
-    scientificName: "Sapindus saponaria"
+    scientificName: "Sapindus saponaria",
+    info: "",
+    flor: "",
+    distribución: "",
+    usos: "",
+    image: ""
   }
 ];
 
