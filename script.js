@@ -84,10 +84,10 @@ const trees = [
   {
     name: "Huizache",
     scientificName: "Acacia farnesiana",
-    info: "",
-    flor: "",
-    distribución: "",
-    usos: "",
+    info: "El Huizache es un arbol que habita las zonas desérticas y semidéserticas de México. Puede alcanzar alturas de entre 4 a 6 metros (15-20ft). Tolera la sequía y temperaturas de hasta  -9° C (15°F). ",
+    flor: "Primavera. Flores amarillas en forma de bolita",
+    distribución: "Zonas desértica y semidesérticas de México",
+    usos: "Se utiliza como árbol de sombra. Atractor de polinizadores durante la primavera.",
     image: ""
   },
   {
