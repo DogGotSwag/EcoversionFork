@@ -183,7 +183,7 @@ function showTreeDetails(treeDetail) {
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
       <p>${tree.info}</p> <!-- Descripción -->
       <p>${tree.flor}<?p> <!--Floracion-->
-      <img src="${tree.image}" alt="${tree.name}" style="max-width:65%; height:auto;"> <!-- Imagen -->
+      <img src="${tree.image}" alt="${tree.name}" style="max-width:85%; height:auto;"> <!-- Imagen -->
     `;
   } else {
     // Si no se encuentra el árbol, muestra un mensaje de error.
