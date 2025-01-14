@@ -48,16 +48,28 @@ const trees = [
   { 
     name: "Mezquite Dulce", 
     scientificName: "Neltuma glandulosa",
-    info: "Árbol nativo del norte de Mexico y suroeste de Estados Unidos. Llega a alcanzar alturas de entre 5 a 9 metros de altura. Resistente a las sequias y heladas. Produce un fruto en forma de vaina",   
+    info: `El Mezquite Dulce es un arbol nativo del norte de Mexico y Suroeste de E.U.A. que puede alcanzar los 8 metros de altura en condiciones moderadas.  
+    Florece durante la primavera y espontaneamente en verano y otoño y produce vainas que son fuente de alimento para la fauna local.\n
+    Se utiliza en reforestación de zonas deserificadas en Mexico Este árbol requiere muy poco riego una vez establecido, 
+    ya que tolera sequías extremas, sin embargo, durante su fase de crecimiento, se recomienda un riego moderado para ayudarlo a desarrollar raíces profundas. 
+    Prosperan en pleno sol y con suelos bien drenados. Tolera temperaturas de hasta -15 °C (0 °F).\n
+    Su madera se utiliza para asar carne, ya que añade sabor, y las vainas se usan para crear una harina libre de gluten.
+    `,
     flor: "Primavera y espontaneamene en verano y otoño.",
-    distribución: "Sonora, Chihuahua, Durango, Coahuila, Nuevo León, Tamaulipas, San Luis Potosí.",
+    distribución: "Sonora, Chihuahua, Durango, Coahuila, Nuevo León,Tamaulipas, San Luis Potosí.",
     usos: "Árbol de sombra, atractor de poliinizadores, se utiliza las vainas para hacer una harina libre de gluten, nitrogernar el suelo, madera usada para asar carne.",
     image: "./imagenes/honeymesquite2.jpg"
   },
   { 
     name: "Mezquite Tornillo", 
     scientificName: "Neltuma pubescens",
-    info: "Árbol nativo del norte de Mexico y suroeste de Estados Unidos, unicamente cerca de cuerpos de agua, especialmente a las orillas de los rios Colorado y Bravo/Grande. Llega a alcanzar alturas de hasta 7 metros de altura. Resistente a las sequias y heladas. Su nombre se debe a que su fruto tiene forma de tornillo.",   
+    info: `El Mezquite Tornillo recibe su nombre porque sus vainas de semillas pueden asemejarse a la forma de un tornillo.
+          Florece en primavera, de abril a junio, y a veces en verano. Este árbol puede alcanzar hasta 7 metros de altura (23 pies) con una extensión similar. 
+          Sus hojas son pequeñas.\n
+          Generalmente se encuentran cerca de cuerpos de agua como cauces secos, arroyos y ríos. Tolera la sequía y temperaturas de hasta  -15° C (0°F). 
+          Crece mejor en suelos bien drenados. Funciona como un árbol de sombra y puede proporcionar un ambiente fresco bajo esta.\n
+          Atrae polinizadores cuando está en floración, y sus semillas pueden alimentar a algunas especies de animales.
+          Antes de la expansión urbana, estos árboles prosperaban y formaban bosques a los lados de muchos ríos, como el río Colorado y el río Bravo (Río Grande).`,   
     flor: "Primavera y espontaneamene en verano.",
     distribución: "Sonora, Chihuahua, Baja California.",
     usos: "'Arbol de sombra, atractor de polinizadores.",
@@ -178,12 +190,15 @@ function showTreeDetails(treeDetail) {
 
   if (tree) {
     // Si el árbol es encontrado, actualiza el contenido del contenedor con su información.
+
+    const formattedInfo = tree.info.replace(/\n/g, '<br>');
+    
     treeDetail.innerHTML = `
       <h2>${tree.name}</h2> <!-- Nombre común del árbol -->
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
-      <p>${tree.info}</p> <!-- Descripción -->
-      <p>${tree.flor}<?p> <!--Floracion-->
-      <img src="${tree.image}" alt="${tree.name}" style="max-width:85%; height:auto; class="center"> <!-- Imagen -->
+      <p class = "text-justify"><strong>Descripción: </strong>${formattedInfo}</p> <!-- Descripción -->
+      <p class = "text-justify"><strong>Floración: </strong>${tree.flor}<?p> <!--Floracion-->
+      <img src="${tree.image}" alt="${tree.name}" style="max-width:85%; height:auto;" class="center"> <!-- Imagen -->
     `;
   } else {
     // Si no se encuentra el árbol, muestra un mensaje de error.
