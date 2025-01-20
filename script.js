@@ -78,20 +78,31 @@ const trees = [
   { 
     name: "Mimbre del desierto", 
     scientificName: "Chilopsis linearis",
-    info: "",
-    flor: "",
-    distribución: "",
-    usos: "",
-    image: ""
+    info: `
+    Este árbol no es necesariamente un mimbre, pero sus hojas le dan una apariencia similar. Este árbol crece hasta 6 metros de altura en promedio. El mimbre del desierto se encuentra comúnmente a lo largo de cauces secos o lugares con acceso a agua entre los 450 y los 1500 metros de elevación.\n
+    Estos árboles prefieren pleno sol, aunque también pueden crecer en semisombra. Una vez establecidos, las lluvias pueden mantener al árbol vivo, pero riego extra puede ayudar a producir más  flores y hojas.\n
+    Su aspecto más notable son las flores color rosa en forma de campana, que florecen desde abril hasta noviembre, lo que hace que este árbol sea una excelente opción para atraer polinizadores como colibríes, abejas y mariposas durante la mayor parte del año. También ofrece refugio para hacer nidos.
+    `,
+    flor: "Abril a Noviembre",
+    distribución: "Chihuahua, Sonora, Baja California, Coahuila, Nuevo León y Durango.\n",
+    usos: "Rompevientos, atractor de polinizadores.",
+    image: "./imagenes/mimbre_desierto.jpg"
   },
   {
     name: "Acacia Uña de Gato",
     scientificName: "Acacia greggii",
-    info: "",
-    flor: "",
-    distribución: "",
-    usos: "",
-    image: ""
+    info: `
+    En su madurez, la Acacia uña de gato puede alcanzar entre 3 y 6 metros de altura y hasta 4.5 metros de ancho. Su ubicación indica que puede soportar temperaturas frías de hasta -15°C y también tolerar las altas temperaturas del desierto. 
+    Este árbol suele encontrarse a lo largo de cauces, laderas rocosas y planicies desérticas por debajo de los 1500 metros de altitud.\n
+    La acacia garra de gato florece en primavera, mostrando flores difusas de color amarillo pálido. Durante el verano y el otoño aparecen vainas retorcidas de color café. 
+    Parcialmente ocultas entre las hojas, se encuentran las espinas que se asemejan a garras de gato.\n
+    Una vez establecida, puede mantenerse por sí sola, pero para un crecimiento máximo, es suficiente un riego profundo una vez al mes. Prefiere el sol pleno y suelos bien drenados.
+    En primavera, atrae polinizadores, los pájaros construyen nidos en sus ramas y los codornices comen sus vainas de semillas.
+    `,
+    flor: "Primavera, flores de aproximadamente 7cm de largo, entre los colores amarillo y blanco",
+    distribución: "Nativa de Chihuahua, Sonora y Baja California. Asi como de Texas, Nuevo México, Arizona, Utah, Nevada y California.",
+    usos: "Atractor de polinizadores en primavera, refugio para aves, árbol de sombra",
+    image: "./imagenes/AcaciaGreggii.jpg"
   },
   {
     name: "Huizache",
@@ -198,7 +209,9 @@ function showTreeDetails(treeDetail) {
       <p><strong>Nombre científico:</strong> ${tree.scientificName}</p> <!-- Nombre científico -->
       <p class = "text-justify"><strong>Descripción: </strong>${formattedInfo}</p> <!-- Descripción -->
       <p class = "text-justify"><strong>Floración: </strong>${tree.flor}<?p> <!--Floracion-->
+      <p class = "text-justify"><strong>Distribución: </strong>${tree.distribución}<?p> <!--Distribucion-->
       <img src="${tree.image}" alt="${tree.name}" style="max-width:85%; height:auto;" class="center"> <!-- Imagen -->
+      
     `;
   } else {
     // Si no se encuentra el árbol, muestra un mensaje de error.
