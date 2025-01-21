@@ -65,7 +65,7 @@ const trees = [
     scientificName: "Neltuma pubescens",
     info: `El Mezquite Tornillo recibe su nombre porque sus vainas de semillas pueden asemejarse a la forma de un tornillo.
           Florece en primavera, de abril a junio, y a veces en verano. Este árbol puede alcanzar hasta 7 metros de altura (23 pies) con una extensión similar. 
-          Sus hojas son pequeñas.\n
+          Sus hojas son pequeñas.
           Generalmente se encuentran cerca de cuerpos de agua como cauces secos, arroyos y ríos. Tolera la sequía y temperaturas de hasta  -15° C (0°F). 
           Crece mejor en suelos bien drenados. Funciona como un árbol de sombra y puede proporcionar un ambiente fresco bajo esta.\n
           Atrae polinizadores cuando está en floración, y sus semillas pueden alimentar a algunas especies de animales.
