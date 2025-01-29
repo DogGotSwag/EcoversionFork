@@ -65,7 +65,7 @@ const trees = [
     scientificName: "Neltuma pubescens",
     info: `El Mezquite Tornillo recibe su nombre porque sus vainas de semillas pueden asemejarse a la forma de un tornillo.
           Florece en primavera, de abril a junio, y a veces en verano. Este árbol puede alcanzar hasta 7 metros de altura (23 pies) con una extensión similar. 
-          Sus hojas son pequeñas.
+          Sus hojas son pequeñas.\n
           Generalmente se encuentran cerca de cuerpos de agua como cauces secos, arroyos y ríos. Tolera la sequía y temperaturas de hasta  -15° C (0°F). 
           Crece mejor en suelos bien drenados. Funciona como un árbol de sombra y puede proporcionar un ambiente fresco bajo esta.\n
           Atrae polinizadores cuando está en floración, y sus semillas pueden alimentar a algunas especies de animales.
@@ -100,18 +100,23 @@ const trees = [
     En primavera, atrae polinizadores, los pájaros construyen nidos en sus ramas y los codornices comen sus vainas de semillas.
     `,
     flor: "Primavera, flores de aproximadamente 7cm de largo, entre los colores amarillo y blanco",
-    distribución: "Nativa de Chihuahua, Sonora y Baja California. Asi como de Texas, Nuevo México, Arizona, Utah, Nevada y California.",
+    distribución: "Tamaulipas, Nuevo León, Coahuila, Chihuahua, Sonora y Baja California.",
     usos: "Atractor de polinizadores en primavera, refugio para aves, árbol de sombra",
     image: "./imagenes/AcaciaGreggii.jpg"
   },
   {
     name: "Huizache",
     scientificName: "Acacia farnesiana",
-    info: "El Huizache es un arbol que habita las zonas desérticas y semidéserticas de México. Puede alcanzar alturas de entre 4 a 6 metros (15-20ft). Tolera la sequía y temperaturas de hasta  -9° C (15°F). ",
+    info: `El Huizache es un arbol que habita las zonas desérticas y semidéserticas de México. Puede alcanzar alturas de entre 4 a 6 metros. 
+    Florece durante la primavera, produciendo unas flores en forma de bolitas amarillas. Contienen espinas, por lo que hay que tener un poco de precaucion.\n
+    Tolera la sequía y temperaturas de hasta  -9° C (15°F). Temperatuas más bajas pueden dañar el árbol. Tolerante a la sequia, crece más rápido con riego profundo adicional.\n
+    Funciona como un árbol de sombra y puede proporcionar un ambiente fresco bajo esta. Atrae polinizadores cuando está en floración, y sus semillas pueden alimentar a alguans especies de animales.
+    
+    `,
     flor: "Primavera. Flores amarillas en forma de bolita",
     distribución: "Zonas desértica y semidesérticas de México",
     usos: "Se utiliza como árbol de sombra. Atractor de polinizadores durante la primavera.",
-    image: ""
+    image: "./imagenes/huizache2.jpg"
   },
   {
     name: "Vara prieta",
@@ -125,11 +130,17 @@ const trees = [
   {
     name: "Palo blanco",
     scientificName: "Celtis reticulata",
-    info: "",
-    flor: "",
-    distribución: "",
-    usos: "",
-    image: ""
+    info: `Un árbol o arbusto grande que crece hasta aproximadamente 15 metros de altura (50 ft). Este árbol se puede encontrar en las orillas de arroyos, barrancos, cañones y colinas secas de piedra caliza.\n
+    Es nativo de la zona oeste de los Estados Unidos y del norte de México.\n
+    El palo blanco florece en primavera, y una vez que las flores desaparecen, aparece un fruto rojo. Este pequeño fruto rojo es como una esfera pequeña, que mide solo 6.35 mm de diámetro.\n
+    El fruto, algo dulce, es consumido por la fauna silvestre y fue una fuente de alimento para los nativos americanos. 
+    Este árbol generalmente se encuentra en áreas con un suministro constante de agua. Este árbol puede crecer a pleno sol, pero también prefiere la sombra parcial. 
+    Aunque puede tolerar condiciones de sequía una vez establecido, necesita riego al menos una vez a la semana para crecer más grande y tener más hojas. 
+    Las aves usan el árbol para construir nidos y proporciona una excelente sombra.`,
+    flor: "Primavera",
+    distribución: "Sonora, Chihuahua, Coahuila, Baja California Sur, Durango, San Luis Potosí",
+    usos: "Árbol de sombra, refugio parar aves, árbol que da frutos.",
+    image: "./imagenes/palo_blanco.jpg"
   },
   {
     name: "Jaboncillo",
