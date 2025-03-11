@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  padding: 10px;
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+}
+
+p {
+  color: #683030;
+  text-align: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+.texto_1 {
+  color: #683030;
+  font-size: 7vw;
+  text-align: center;
+}
+
+.texto_2 {
+  color: #683030;
+  font-size: 5vw;
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(60, 60, 60, 0.8);
+  border-radius: 10px;
+}
+
+.boton_menu {
+  cursor: pointer;
+  width: 150px;
+  height: 80px;
+  padding: 1px;
+  border: 5px solid #ccc;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto_menu {
+  font-size: 1.5vw;
+  color: white;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1; 
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.boton_2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.boton_2 p {
+  text-align: center;
+  font-size: 1rem;
+  color: #683030;
+  margin: 0;
+}
+
+footer {
+  background-color: #4caf50;
+  padding: 10px;
+  text-align: center;
+  font-size: 3vw;
+  color: white;
+  min-height: 100px;
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 620px) {
+  header {
+    font-size: 4vw;
+  }
+
+  .texto_1 {
+    font-size: 8vw;
+  }
+
+  .texto_2 {
+    font-size: 6vw;
+  }
+
+  .menu {
+    width: 90%;
+  }
+
+  .boton_menu {
+    width: 110%;
+    height: 60px;
+  }
+
+  .texto_menu {
+    font-size: 4vw;
+  }
+
+  .a {
+    width: 50%;
+    margin: 5px; 
+    font-size: 3vw;
+  }
+}
+
+/* Adjustments for larger screens (desktop) */
+@media only screen and (min-width: 1024px) {
+  .texto_1 {
+    font-size: 3vw;
+  }
+
+  .texto_2 {
+    font-size: 2.5vw;
+  }
+
+  .boton_menu {
+    width: 200px;
+    height: 100px;
+  }
+
+  .texto_menu {
+    font-size: 1.2vw;
+  }
+
+  .boton {
+    width: 300px;
+    font-size: 1.2rem;
+  }
+}
